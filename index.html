@@ -19,23 +19,23 @@
 </nav>
 
 <div class="container">
-	<div class="panel panel-default">
-		<div class="panel-heading">
-			<h3 class="panel-title">Game Rules</h3>
-		</div>
-		<div class="panel-body">
-		    <p>You will be given a random number at the start of the game.</p>
-		    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-		    <p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</p>
-		    <p>The value of each crystal is hidden from you until you click on it.</p>
-		    <p>Each time when the game starts, the game will change the values of each crystal.</p>
-		</div>
-	</div>
-</div>
-
-<div class="container">
 	<div class="row">
-		<div class="col-md-6">
+		<section class="col-sm-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+		<h3 class="panel-title">Game Rules</h3>
+				</div>
+		<jumbotron> 
+		    <p>You will be given a random number at the start of the game. There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+			<p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</p>
+			<p>The value of each crystal is hidden from you until you click on it. Each time when the game starts, the game will change the values of each crystal.</p>
+		</jumbotron>
+			</div>
+		</section>
+	</div>
+
+	<div class="row">
+		<section class="col-sm-4">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">Random Number</h3>
@@ -44,9 +44,20 @@
 					<div class="random-number"></div>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="col-md-6">
+		<section class="col-sm-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Current Score</h3>
+				</div>
+				<div class="panel-body">
+					<div class="total-score"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="col-sm-4">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">Stats</h3>
@@ -57,30 +68,22 @@
 					<div class="losses"></div>
 				</div>
 			</div>
-		</div>
+		</section>
 	</div>
 </div>
+
+
 
 <div class="container">
 	<div class="row">
-		<div class="crystals col-md-12">
+		<section class="crystals col-sm-12">
 			<img class="gem1" src="assets/images/gem1.jpg">
 			<img class="gem2" src="assets/images/gem2.jpg">
 			<img class="gem3" src="assets/images/gem3.jpg">
-		</div>
+		</section>
 	</div>
 </div>
 
-<div class="container">
-	<div class="panel panel-default">
-		<div class="panel-heading">
-			<h3 class="panel-title">Total Score</h3>
-		</div>
-		<div class="panel-body">
-			<div class="total-score"></div>
-		</div>
-	</div>
-</div>
 
 <script type="text/javascript" src="assets/javascript/game.js"></script> <!--JavaScript-->
 </body>
